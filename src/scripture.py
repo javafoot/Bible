@@ -22,5 +22,6 @@ line = re.sub(r'[\n\s]+|（.+）','',scripture)
 cleanStr = re.sub(r'和合本\)',r")\n\n",line)
 all += cleanStr
 
+
 print(all)
 print("777LJC777")
