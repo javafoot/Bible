@@ -1,4 +1,4 @@
-#!/bin/env python
+#!/bin/env python3
 
 from datetime import datetime
 import os
@@ -18,7 +18,7 @@ now = datetime.now()
 mm = now.strftime('%m')
 dd = now.strftime('%d')
 all = f'{mm}月{dd}号感动经文:\n\n'
-line = re.sub(r'[\n\s]+|（.+）','',scripture)
+line = re.sub(r'[\n\s]+|（.+?）','',scripture)
 cleanStr = re.sub(r'和合本\)',r")\n\n",line)
 all += cleanStr
 
