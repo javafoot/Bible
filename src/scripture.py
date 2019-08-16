@@ -1,4 +1,7 @@
 #!/bin/env python3
+# -*- coding: UTF-8 -*-
+##==== LORD JESUS CHRIST LOVES YOU ====
+##==== Code in the Name of LORD JESUS CHRIST ====
 
 from datetime import datetime
 import os
@@ -25,3 +28,6 @@ all += cleanStr
 
 print(all)
 print("777LJC777")
+
+##==== Glory to GOD ====
+

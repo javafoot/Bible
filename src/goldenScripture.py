@@ -1,3 +1,7 @@
+#!/bin/env python3
+# -*- coding: UTF-8 -*-
+##==== LORD JESUS CHRIST LOVES YOU ====
+##==== Code in the Name of LORD JESUS CHRIST ====
 from datetime import datetime
 import re
 
@@ -22,3 +26,32 @@ for part in parts:
     all += account
     print(account,part)
 print(all)
+
+
+
+###
+# re.subn(r'\(.+?\)\s*','',sc)
+##('Let us not become weary in doing good, for at the proper time we, will reap a harvest if we do not give up. ', 2)
+'''
+ss='Let us not become weary in doing good, for at the proper time (right time) we(good), will reap a harvest if we do not give up. (Galatians 6:9 NIV)'
+
+
+chapNoPtn = re.compile(r'\(\w+\s*\d+:\d+(?:-\d+)?(?:\s+NIV)?\)')
+chapNoPtn.findall(ss)
+['(Galatians 6:9 NIV)']
+>>> chapNoPtn.sub('',ss)
+'Let us not become weary in doing good, for at the proper time (right time) we(good), will reap a harvest if we do not give up. '
+>>> sc = chapNoPtn.sub('',ss)
+>>> sc
+'Let us not become weary in doing good, for at the proper time (right time) we(good), will reap a harvest if we do not give up. '
+
+>>> re.sub(r'\(.+?|)\s','',sc)
+>>> re.sub(r'\(.+?\)\s','',sc)
+'Let us not become weary in doing good, for at the proper time we(good), will reap a harvest if we do not give up. '
+>>> re.subn(r'\(.+?\)\s*','',sc)
+('Let us not become weary in doing good, for at the proper time we, will reap a harvest if we do not give up. ', 2)
+
+
+'''
+##==== Glory to GOD ====
+
