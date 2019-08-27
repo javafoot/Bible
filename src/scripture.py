@@ -7,6 +7,7 @@ from datetime import datetime
 import os
 import re
 
+linesep = os.linesep
 pyfile = os.path.abspath(__file__)
 print(pyfile)
 pydir = os.path.dirname(pyfile)
@@ -20,13 +21,13 @@ with open(filename,encoding='UTF-8') as f:
 now = datetime.now()
 mm = now.strftime('%m')
 dd = now.strftime('%d')
-all = f'{mm}月{dd}号感动经文:\n\n'
+allStr = f'{mm}月{dd}号感动经文:{linesep}{linesep}'
 line = re.sub(r'[\n\s]+|（.+?）','',scripture)
 cleanStr = re.sub(r'和合本\)',r")\n\n",line)
-all += cleanStr
+allStr += cleanStr
 
 
-print(all)
+print(allStr)
 print("777LJC777")
 
 ##==== Glory to GOD ====
