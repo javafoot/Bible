@@ -3,12 +3,39 @@
 ##==== LORD JESUS CHRIST LOVES YOU ====
 ##==== Code in the Name of LORD JESUS CHRIST ====
 from datetime import datetime
-import re
+import os,re
 
-scripture = '''
-道成了肉身住在我们中间，充充满满的有恩典有真理。我们也见过他的荣光，正是父独生子的荣光。 (约翰福音 14:2-3,6,13 和合本)The Word became flesh and made his dwelling among us. We have seen his glory, the glory of the One and Only, who came from the Father, full of grace and truth. (John 14:2-3,6,13 NIV)'''
+linesep = os.linesep
+scripture = '''耶和华－你　神原是有怜悯的　神；他总不撇下你，不灭（不撇下你，不）绝你，也不忘记他起誓   与你列祖所立的约。  (申命记 4:31 和合本)
+For the Lord your God is a merciful God; he will not abandon or destroy you or forget the covenant with your ancestors, which he confirmed to them by oath.  (Deuteronomy 4:31 NIV)'''
 
-#print(scripture)
+
+now = datetime.now()
+mm = now.strftime('%m')
+dd = now.strftime('%d')
+allSc = f'{mm}月{dd}号背诵金句: '
+#08月27号背诵金句: 126415  9147
+
+chEng = scripture.split('和合本)')
+chs = re.sub(r'[\n\s]+|（.+?）','',chEng[0]) + ')'
+
+chsParts = re.split(r'[，。；－]',chs)
+count = ""
+for part in chsParts:
+    if part.startswith('('):
+        continue
+    count += str(len(part))
+    
+#print(count)
+allSc += count + linesep + linesep + chs + linesep
+#print(allSc)
+eng = re.sub(r'\s*\((\w+) ([\d:]+) NIV\)',r'(\1\2)',chEng[1])
+eng = re.sub(linesep+'*','',eng)
+allSc += eng
+#print(eng)
+#print(1111111111)
+print(allSc)
+exit()
 result = re.match(r'(.+)\(.+和合本\)(.+)',scripture)
 print(result)
 if True:
