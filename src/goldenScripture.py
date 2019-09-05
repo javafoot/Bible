@@ -5,8 +5,7 @@
 from datetime import datetime
 import os,re
 
-scripture = '''将列国的神像都扔在火里；因为它本不是神，乃是人手所造的，是木头石头的，所以灭绝它。 (列王纪下 19:18 和合本)
-They have thrown their gods into the fire and destroyed them, for they were not gods but only wood and stone, fashioned by human hands. (2 Kings 19:18 NIV)'''
+scripture = '''所以你当归向你的　神，谨守仁爱、公平，常常等候你的　神。(何西阿书 12:6 和合本)But you must return to your God; maintain love and justice, and wait for your God always. (Hosea 12:6 NIV)'''
 
 linesep = os.linesep
 now = datetime.now()
@@ -18,14 +17,16 @@ chEng = scripture.split('和合本)')  ## Seperate Chinese from English
 chs = re.sub(r'[\n\s]+|（.+?）','',chEng[0]) + ')'  ## Clean Chinese part
 
 ## Count Chinese characters
-chsParts = re.split(r'[，。；－]',chs)
+chsParts = re.split(r'[，。；－”]+',chs)
+print(chsParts)
 count = ""
 for part in chsParts:
     if part.startswith('('):
         continue
-    count += str(len(part))
+    partWithoutPuncMark = re.sub(r'、','',part)  ## Remove the punctuation marks like '、' before counting.
+    count += str(len(partWithoutPuncMark))
     
-#print(count)
+print(count)
 
 ## Handle Eng
 eng = re.sub(r'\s*\(((?:[12] )?\w+) ([\d:]+) NIV\)',r'(\1\2)',chEng[1])  ## Handle the part '. (2 Kings 19:18 NIV)'
