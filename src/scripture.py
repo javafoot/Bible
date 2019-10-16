@@ -8,6 +8,9 @@ import os
 import re
 
 linesep = os.linesep
+## /swd/code>ln -s /swd/code/t01/t02/test.py 0t.py
+## os.path.realpath(__file__)  ## /swd/code/0t.py
+## os.path.abspath(__file__)   ## /swd/code/t01/t02/test.py
 pyfile = os.path.abspath(__file__)
 print(pyfile)
 ##pydir = os.path.dirname(pyfile)
