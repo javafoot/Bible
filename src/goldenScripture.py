@@ -5,7 +5,14 @@
 from datetime import datetime
 import os,re
 
-scripture = '''如经上所记：　神为爱他的人所预备的是眼睛未曾看见，耳朵未曾听见，人心也未曾想到的。(哥林多前书 2:9 和合本)However, as it is written: “What no eye has seen, what no ear has heard, and what no human mind has conceived”— the things God has prepared for those who love him. (1 Corinthians 2:9 NIV)'''
+scripture = '''
+
+若有人自以为虔诚，却不勒住他的舌头，反欺哄自己的心，这人的虔诚是虚的。 (雅各书 1:26 和合本)Those who consider themselves religious and yet do not keep a tight rein on their tongues deceive themselves, and their religion is worthless. (James 1:26 NIV)
+
+'''
+
+
+'''“基督耶稣降世，为要拯救罪人。”这话是可信的，是十分可佩服的。在罪人中我是个罪魁。 (提摩太前书 1:15 和合本)Here is a trustworthy saying that deserves full acceptance: Christ Jesus came into the world to save sinners—of whom I am the worst. (1 Timothy 1:15 NIV)'''
 
 linesep = os.linesep
 now = datetime.now()
@@ -24,7 +31,7 @@ count = ""
 for part in chsParts:
     if part.startswith('('):
         continue
-    partWithoutPuncMark = re.sub(r'、','',part)  ## Remove the punctuation marks like '、' before counting.
+    partWithoutPuncMark = re.sub(r'[、“]','',part)  ## Remove the punctuation marks like '、' before counting.
     count += str(len(partWithoutPuncMark))
 print(count)
 

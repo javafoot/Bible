@@ -10,8 +10,9 @@ import re
 linesep = os.linesep
 pyfile = os.path.abspath(__file__)
 print(pyfile)
-pydir = os.path.dirname(pyfile)
-filename = pydir + "/scripture.txt"
+##pydir = os.path.dirname(pyfile)
+##filename = pydir + "/scripture.txt"
+filename = pyfile + '.txt'
 print(filename)
 with open(filename,encoding='UTF-8') as f:
     scripture = f.read()
@@ -23,7 +24,7 @@ mm = now.strftime('%m')
 dd = now.strftime('%d')
 allStr = f'{mm}月{dd}号感动经文:{linesep}{linesep}'
 line = re.sub(r'[\n\s]+|（.+?）','',scripture)
-cleanStr = re.sub(r'和合本\)',r")\n\n",line)
+cleanStr = re.sub(r'和合本\)',r')\n\n',line)
 allStr += cleanStr
 
 
