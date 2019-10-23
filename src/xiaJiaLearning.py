@@ -16,7 +16,7 @@ with open(filename,encoding='UTF-8') as f:
     title = f.readline()
     content = f.read()
 
-content = content.replace('','● ')
+content = content.replace('','● ').replace('','    ◆ ')
 
 now = datetime.now()
 mm = now.strftime('%m')
