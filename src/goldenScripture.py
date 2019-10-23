@@ -7,7 +7,8 @@ import os,re
 
 scripture = '''
 
-若有人自以为虔诚，却不勒住他的舌头，反欺哄自己的心，这人的虔诚是虚的。 (雅各书 1:26 和合本)Those who consider themselves religious and yet do not keep a tight rein on their tongues deceive themselves, and their religion is worthless. (James 1:26 NIV)
+原来我们在许多事上都有过失；若有人在话语上没有过失，他就是完全人，也能勒住自己的全身。 (雅各书 3:2 和合本)We all stumble in many ways. Anyone who is never at fault in what they say is perfect, able to keep their whole body in check. (James 3:2 NIV)
+
 
 '''
 
@@ -31,7 +32,7 @@ count = ""
 for part in chsParts:
     if part.startswith('('):
         continue
-    partWithoutPuncMark = re.sub(r'[、“]','',part)  ## Remove the punctuation marks like '、' before counting.
+    partWithoutPuncMark = re.sub(r'[、“”]','',part)  ## Remove the punctuation marks like '、' before counting.
     count += str(len(partWithoutPuncMark))
 print(count)
 
@@ -46,7 +47,8 @@ for part in engParts:
     if part.startswith('('):
         continue
     #print(part.strip().split(' '))
-    count += str(len(part.strip().split(' ')))
+    cleanPart = re.sub(r'[、“”]','',part).strip()
+    count += str(len(cleanPart.split(' ')))
 allSc += count + linesep + linesep + chs + linesep + eng
 print(allSc)
 ##==== Glory to GOD ====
