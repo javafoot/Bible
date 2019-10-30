@@ -2,23 +2,30 @@
 # -*- coding: UTF-8 -*-
 ##==== LORD JESUS CHRIST LOVES YOU ====
 ##==== Code in the Name of LORD JESUS CHRIST ====
-from datetime import datetime
+from datetime import datetime,timedelta
 import os,re
 
-
-date = 23
-books = ('诗篇','彼得后书','以西结书')
-chapNo = (114,1,33)
-
+## [[<< Change the metadata -----------
+month = None
+day = 31
+books = ('诗篇','约翰二书','耶利米书')
+chapNo = (121,1,45)
+## >>]] Change the metadata -----------
 days = 7
 linesep = os.linesep
-now = datetime.now()
-mm = now.strftime('%m')
-##dd = now.strftime('%d')
-title = f'《得胜读经计划》{mm}月dd号读经：'  ## 《得胜读经计划》10月23号读经：
+startTime = datetime.now()
+if month != None:
+    startTime = startTime.replace(month=month)
+if day != None:
+    startTime = startTime.replace(day=day)
+
 span = 0
 while span < days:
-    plan = title.replace('dd',str(date + span))
+    theDay = startTime + timedelta(days=span)
+    mm = theDay.strftime('%m')
+    dd = theDay.strftime('%d')
+    ##dd = now.strftime('%d')
+    plan = f'《得胜读经计划》{mm}月{dd}号读经：'  ## 《得胜读经计划》10月23号读经：
     plan += linesep + linesep
     for i in range(len(books)):
         if i < 2:
