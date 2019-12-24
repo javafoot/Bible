@@ -7,7 +7,8 @@ import os,re
 
 scripture = '''
 
-原来我们在许多事上都有过失；若有人在话语上没有过失，他就是完全人，也能勒住自己的全身。 (雅各书 3:2 和合本)We all stumble in many ways. Anyone who is never at fault in what they say is perfect, able to keep their whole body in check. (James 3:2 NIV)
+因今天在大卫的城里，为你们生了救主，就是主基督。你们要看见一个婴孩，包着布，卧在马槽里，那就是记号了。 (路加福音 2:11-12 和合本)
+Today in the town of David a Savior has been born to you; he is the Messiah, the Lord. This will be a sign to you: You will find a baby wrapped in cloths and lying in a manger. (Luke 2:11-12 NIV)
 
 
 '''
@@ -26,7 +27,7 @@ chEng = scripture.split('和合本)')  ## Seperate Chinese from English
 ## Handle Chinese
 chs = re.sub(r'[\n\s]+|（.+?）','',chEng[0]) + ')'  ## Clean Chinese part
 ## Count Chinese characters
-chsParts = re.split(r'[，。；－：”]+',chs)
+chsParts = re.split(r'[，。；－：”？]+',chs)
 print(chsParts)
 count = ""
 for part in chsParts:
@@ -37,14 +38,14 @@ for part in chsParts:
 print(count)
 
 ## Handle Eng
-eng = re.sub(r'\s*\(((?:[12] )?\w+) ([\d:]+) NIV\)',r'(\1\2)',chEng[1])  ## Handle the part '. (2 Kings 19:18 NIV)'
+eng = re.sub(r'\s*\(((?:[12] )?\w+) ([\d:-]+) NIV\)',r'(\1\2)',chEng[1])  ## Handle the part '. (2 Kings 19:18 NIV)'
 eng = re.sub(linesep+'*','',eng)  ## Clean Eng part
 ## Count Eng words
-engParts = re.split(r'[,.;]|: “|”—',eng)
+engParts = re.split(r'[,.;?:]|: “|”—',eng)
 print(engParts)
 count += "  "
 for part in engParts:
-    if part.startswith('('):
+    if part.startswith('(') or part.endswith(')'):
         continue
     #print(part.strip().split(' '))
     cleanPart = re.sub(r'[、“”]','',part).strip()
