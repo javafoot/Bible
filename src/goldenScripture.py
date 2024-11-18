@@ -7,8 +7,8 @@ import os,re
 
 scripture = '''
 
-因今天在大卫的城里，为你们生了救主，就是主基督。你们要看见一个婴孩，包着布，卧在马槽里，那就是记号了。 (路加福音 2:11-12 和合本)
-Today in the town of David a Savior has been born to you; he is the Messiah, the Lord. This will be a sign to you: You will find a baby wrapped in cloths and lying in a manger. (Luke 2:11-12 NIV)
+因有一婴孩为我们而生；有一子赐给我们。政权必担在他的肩头上；他名称为“奇妙策士、全能的　神、永在的父、和平的君”。(以赛亚书 9:6 和合本)
+For to us a child is born, to us a son is given, and the government will be on his shoulders. And he will be called Wonderful Counselor, Mighty God, Everlasting Father, Prince of Peace. (Isaiah 9:6 NIV)
 
 
 '''
