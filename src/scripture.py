@@ -20,14 +20,16 @@ print(filename)
 with open(filename,encoding='UTF-8') as f:
     scripture = f.read()
 
-##print(scripture)
+print(f'|{scripture}|')
 
 now = datetime.now()
 mm = now.strftime('%m')
 dd = now.strftime('%d')
 allStr = f'{mm}月{dd}号感动经文:{linesep}{linesep}'
-line = re.sub(r'[\n\s]+|（.+?）','',scripture)
+line = re.sub(rf'[{linesep}\s]+|（.+?）','',scripture)
 cleanStr = re.sub(r'和合本\)',r')\n\n',line)
+
+print(f'cleanStr: |{cleanStr}|')
 allStr += cleanStr
 
 
