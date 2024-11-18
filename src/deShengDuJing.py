@@ -6,18 +6,18 @@ from datetime import datetime,timedelta
 import os,re
 
 ## [[<< Change the metadata -----------
-month = None
-day = 31
-books = ('诗篇','约翰二书','耶利米书')
-chapNo = (121,1,45)
+month = 12 ##None
+day = 28
+books = ('箴言','腓立比书','约伯记')
+chapNo = (29,1,38)
 ## >>]] Change the metadata -----------
 days = 7
 linesep = os.linesep
 startTime = datetime.now()
-if month != None:
-    startTime = startTime.replace(month=month)
 if day != None:
     startTime = startTime.replace(day=day)
+if month != None:
+    startTime = startTime.replace(month=month)
 
 span = 0
 while span < days:
@@ -36,6 +36,17 @@ while span < days:
     span += 1
     print(plan)
     print("\n-----------\n\n")
+
+
+
+
+
+https://web.xiaodaka.com/#/topic_list?habitID=1750228&currentPage=NaN
+
+
+
+
+
 
 
 ##==== Glory to GOD ====

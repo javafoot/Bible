@@ -1,19 +1,189 @@
-他使旷野变为水潭，
-叫旱地变为水泉。
-他使饥饿的人住在那里，
-好建造可住的城邑，
-……他却将穷乏人安置在高处，脱离苦难，
-使他的家属多如羊群。
-正直人看见就欢喜；
-罪孽之辈必塞口无言。
-凡有智慧的，必在这些事上留心，
-也必思想耶和华的慈爱。
-(诗篇 107:35-36,41-43 和合本)
 
-你们这些淫乱的人（原文是淫妇）哪，岂不知与世俗为友就是与　神为敌吗？所以凡想要与世俗为友的，就是与　神为敌了。……你们亲近　神，　神就必亲近你们。有罪的人哪，要洁净你们的手！心怀二意的人哪，要清洁你们的心！……务要在主面前自卑，主就必叫你们升高。
-……设立律法和判断人的，只有一位，就是那能救人也能灭人的。你是谁，竟敢论断别人呢？
-……人若知道行善，却不去行，这就是他的罪了。
-(雅各书 4:4,8,10,12,17 和合本)
+/snxVerCtrl/release?groupId=com.synnex.biz2&artifactId=biz-ecx&version=2.1.72-SNXBETA&packaging=jar
 
-你们在那里要追念玷污自己的行动作为，又要因所做的一切恶事厌恶自己。主耶和华说：以色列家啊，我为我名的缘故，不照着你们的恶行和你们的坏事待你们；你们就知道我是耶和华。”
-(以西结书 20:43-44 和合本)
+http://mvn.synnex.org/snxVerCtrl/release?groupId=com.synnex.bigdata&artifactId=azkaban-jobtype-common&version=5.2.3-SNXBETA&packaging=jar
+
+groupId=com.synnex.bigdata; \
+artifactId=bigdata-common-util; \
+version=2.9.2-SNXBETA; \ 
+curl http://mvn.synnex.org/snxVerCtrl/release?groupId=${groupId}&artifactId=${artifactId}&version=${version}&packaging=jar
+
+
+Psalms 106:23-25 37-38 4041 43-46 48
+James 3:9-10 13-
+Ezekiel 18:20 -24 32
+
+----
+Psalms 107:17-22 43
+James 4:1 -4 6-8 13-
+Ezekiel 20:18-19 21 -24 34 44
+
+↗
+⇑
+⇒
+⬈
+→ ← ↔ ⟵⟷⟩
+↗↘
+
+NoHardcodedStringRule
+
+2024-06-05
+1. Sonar upgrade
+1.1. Deploy Sonar9.9.5LTA by Helm3 in the backup PROD K8S
+1.2. Import the data of Sonar PROD.
+1.3. Can't install plugins for no DNS parseing.
+2. Commit DO of the RDS_parent_module.xml from git for Hank Zheng.
+3. Maven supports
+
+
+
+
+
+Sales order view is a readonly screen, you would like to reivew order details | such as order  | shipping information 
+
+pricing tracking and  information | and more.
+
+1. Biz Elasticsearch support
+2. bcp plan for biz es
+3. dev_studio_user_activity setup in biz es
+4. generic cpo index configuration in biz es
+
+04/19
+Front desk: Here you go, one missing otter.
+Judy: That's it?
+Front desk: Yikes! That is the smallest case file I've ever seen. Leads, none; Witnesses, none; and you're not in the computer system yet, so, resources, none! Oh, I hope you didn't stake your career on cracking this one!
+
+
+
+04/15
+(What about the PC OEMS, are they all going to have AI enabled PCs? )
+Yes, absolutely. I think we've seen some early machines coming out already, but you can expect that every vendor will bring out AI enabled PCs running either the AMD, Qualcomm, Intel, and obviously Apple will be running its own chips.
+
+
+
+04/16
+A: What do you like to do for fun?
+B: I really like going camping, because I like being in nature and sitting by the campfire at night and roasting the marshmallows.
+
+
+
+04/12
+Monic: Why are we standing here?
+Rachel: We're waiting for you to open the door. You got the keys.
+Monica: No, I don't.
+Rachel: Yes, you do. When we left, you said, “got the keys.”
+Monica: No, I didn't. I asked, “got the ke-eys?”
+Rachel: No, no, no, you said “got the keys”.
+Man: Do either of you have the keys?
+
+
+0411
+Sales order view is a read-only screen utilized to review order details such as order status, shipping information, pricing, tracking and serial information, and more.
+
+
+04/10
+Yes, AI in the Cloud is very improtant for large language models, for training and for inference. But you also need AI at the edge and also in the client's devices.
+
+
+04/09
+That idea of scraping the entire internet and putting it in one computer, let the computer figure out what the program is is an insane concept, but you wouldn't ever consider doing it unless the marginal cost of computing was zero.
+
+0325
+What is going on in the company that created chatGPT / is without a doubt going to be created / into a movie / and we are living through it / in real time. 
+
+
+0326
+The 'message that I 'really want to get home / to the American government / and everybody that is trying to pass this bill is / 'you will be destroying small businesses like us.
+
+
+0327
+If we 'hover over that, we can see that we have a 'tool tip which gives us / the name of the state / as well as the 'exact numeric value of the tool tip.
+
+0328
+One of the reasons why you 'have to 'delegate now / is you have to make space / for the time that you have to 'spend / coaching and developing and mentoring other people.
+
+0329
+A: Oh, weekend plans? Yeah, I have 'tons of weekend plans. I'm going to go on a few 'walks with my 'dog. I'm going to 'get 'brunch with some 'friends, hang out with my 'family. How about 'you? Any 'plans?
+B: Yeah, No.
+
+
+2024 英语专项课美式发音课-20240329_010914-Meeting Recording.mp4
+https://tdworldwide-my.sharepoint.com/personal/t420972k_tdsynnex_com/_layouts/15/stream.aspx?id=%2Fpersonal%2Ft420972k%5Ftdsynnex%5Fcom%2FDocuments%2FRecordings%2F2024%20%E8%8B%B1%E8%AF%AD%E4%B8%93%E9%A1%B9%E8%AF%BE%E7%BE%8E%E5%BC%8F%E5%8F%91%E9%9F%B3%E8%AF%BE%2D20240329%5F010200%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview&ga=1
+
+eu_loc_name: (YOAKUM COUNTY) AND address1: (PO BOX 516) AND (zipcode:"44444" OR (state:"TX" AND city:"PLAINS"))
+
+Psalms 87:1 3 5
+Romans 15:4 -7 13 33
+Deuteronomy 22:1 2 8
+
+git clone -b hankz_mvn https://diego.lin%40tdsynnex.com@git.synnex.org/dm/bigdata-auth-clients.git
+
+Crop audio:
+ffmpeg -ss <start position> -i inputfile -t<duration> -c:a copy outputfile
+
+240124,104318|M30P|~
+u0_a171>ffmpeg -ss 08:14 -i 0/Download/mw240124.mp3 -c:a copy 0/Download/mw240124_hope.mp3
+
+<Location />
+    <RequireAll>
+        Require ip 10.16.83.150
+        Require all denied
+    </RequireAll>
+</Location>
+
+
+
+<VirtualHost *:80>
+    <RequireAll>
+        Require ip 10.16.83.150
+        Require all denied
+    </RequireAll>
+</VirtualHost>
+
+ org.mapstruct:mapstruct:jar:1.2.0.Final:compile
+[INFO] |  +- org.springframework:spring-web:jar:5.2.8.RELEASE:compile
+[INFO] |  |  \- org.springframework:spring-beans:jar:5.2.8.RELEASE:compile
+[INFO] |  +- com.alibaba:fastjson:jar:1.2.83:compile
+[INFO] |  +- javax.servlet:javax.servlet-api:jar:4.0.1:compile
+[INFO] |  +- commons-io:commons-io:jar:2.7:compile
+[INFO] |  +- org.springframework:spring-context-support:jar:5.2.8.RELEASE:compile
+[INFO] |  |  \- org.springframework:spring-context:jar:5.2.8.RELEASE:compile
+[INFO] |  +- com.sun.activation:javax.activation:jar:1.2.0:compile
+[INFO] |  +- com.fasterxml.jackson.core:jackson-databind:jar:2.11.2:compile
+[INFO] |  |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.11.2:compile
+[INFO] |  |  \- com.fasterxml.jackson.core:jackson-core:jar:2.11.2:compile
+[INFO] |  +- org.springframework.data:spring-data-commons:jar:2.3.3.RELEASE:compile
+[INFO] |  +- com.squareup.okhttp3:okhttp:jar:3.14.9:compile
+[INFO] |  |  \- com.squareup.okio:okio:jar:1.17.2:compile
+[INFO] |  \- io.github.openfeign:feign-core:jar:10.10.1:compile
+[INFO] +- org.springframework.boot:spring-boot-starter:jar:2.3.3.RELEASE:compile
+[INFO] |  +- org.springframework.boot:spring-boot:jar:2.3.3.RELEASE:compile
+[INFO] |  +- org.springframework.boot:spring-boot-autoconfigure:jar:2.3.3.RELEASE:compile
+[INFO] |  +- jakarta.annotation:jakarta.annotation-api:jar:1.3.5:compile
+[INFO] |  +- org.springframework:spring-core:jar:5.2.8.RELEASE:compile
+[INFO] |  |  \- org.springframework:spring-jcl:jar:5.2.8.RELEASE:compile
+[INFO] |  \- org.yaml:snakeyaml:jar:1.26:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-log4j2:jar:2.3.3.RELEASE:compile
+[INFO] |  +- org.apache.logging.log4j:log4j-slf4j-impl:jar:2.17.1:compile
+[INFO] |  |  \- org.apache.logging.log4j:log4j-api:jar:2.17.1:compile
+[INFO] |  +- org.apache.logging.log4j:log4j-core:jar:2.17.1:compile
+[INFO] |  +- org.apache.logging.log4j:log4j-jul:jar:2.17.1:compile
+[INFO] |  \- org.slf4j:jul-to-slf4j:jar:1.7.30:compile
+[INFO] +- com.synnex.arch:embedded-redis:jar:0.7-SNAPSHOT:test
+[INFO] |  \- com.google.guava:guava:jar:29.0-jre:compile
+[INFO] |     +- com.google.guava:failureaccess:jar:1.0.1:compile
+[INFO] |     +- com.google.guava:listenablefuture:jar:9999.0-empty-to-avoid-conflict-with-guava:compile
+[INFO] |     +- com.google.code.findbugs:jsr305:jar:3.0.2:compile
+[INFO] |     +- org.checkerframework:checker-qual:jar:2.11.1:compile
+[INFO] |     +- com.google.errorprone:error_prone_annotations:jar:2.3.4:compile
+[INFO] |     \- com.google.j2objc:j2objc-annotations:jar:1.3:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-test:jar:2.3.3.RELEASE:test
+[INFO] |  +- org.springframework.boot:spring-boot-test:jar:2.3.3.RELEASE:test
+[INFO] |  +- org.springframework.boot:spring-boot-test-autoconfigure:jar:2.3.3.RELEASE:test
+[INFO] |  +- com.jayway.jsonpath:json-path:jar:2.4.0:test
+[INFO] |  |  \- net.minidev:json-smart:jar:2.3:test
+[INFO] |  |     \- net.minidev:accessors-smart:jar:1.2:test
+[INFO] |  |        \- org.ow2.asm:asm:jar:5.0.4:test
+[INFO] |  +- jakarta.xml.bind:jakarta.xml.bind-api:jar:2.3.3:test
+[INFO] |  |  \- jakarta.activation:jakarta.activation-api:jar:1.2.2:test
+[INFO] |  +- org.assertj:assertj-core:jar:3.16.1:test
